@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Redirect to a Unata</h2>
+
+<button onclick="myFunction()">Click me!</button>
+
+<script>
+function myFunction() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const redirect_url = urlParams.get('redirect_url')
+  location.replace(redirect_url)
+}
+</script>
+
+</body>
+</html> 
